@@ -1,5 +1,6 @@
 import random
 
+
 '''
 Aplicación que ayuda a generar una contraseña random a partir
 de letras, números y signos. 
@@ -29,35 +30,22 @@ signos = ['@', "#", '$', '%',
            '!']
 
 
+def escoger_elementos(fuente, cantidad):
+    """Escoge una cantidad de elementos aleatorios de una lista fuente."""
+    return [random.choice(fuente) for _ in range(cantidad)]
 
-# Creamos un listado donde temporalmente guardaremos las letras escogidas
-lista_letras = []
 
-# Escogeremos 4 letras de manera aleatoria
-for _ in range(4):
-    # Y las guardarás en una lista llamada lista_letras[]
-    lista_letras.append(random.choice(letras))
 
-# Imprime lista_letras[]
+
+
+# Usamos la función para generar las listas de caracteres
+lista_letras = escoger_elementos(letras, 4)
 print(lista_letras)
 
-
-# Creamos un listado donde temporalmente guardaremos las letras escogidas
-lista_numeros = []
-
-#escogeremos 2 números
-for _ in range(2):
-    #Vamos guardando los números escogidos aleatoriamente en lista_numeros[]
-    lista_numeros.append(random.choice(numeros))
-
+lista_numeros = escoger_elementos(numeros, 2)
 print(lista_numeros)
 
-
-# Hacemos los mismo con los signos
-lista_signos = []
-for sig in range(2):
-    lista_signos.append(random.choice(signos))
-
+lista_signos = escoger_elementos(signos, 2)
 print(lista_signos)
 
 # Ahora coges y unes los 3 listados en uno sólo que se llamará acceso[]
