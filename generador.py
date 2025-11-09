@@ -6,7 +6,8 @@ Aplicación que ayuda a generar una contraseña random a partir
 de letras, números y signos. 
 '''
 
-#Se podría incluir más adelante la 'ñ' o la 'ç'...
+#Se podría incluir más adelante la 'ç'...
+#Añado la letra ñ
 
 letras = ['a', 'b', 'c', 'd',
           'e', 'f', 'g', 'h',
@@ -14,7 +15,7 @@ letras = ['a', 'b', 'c', 'd',
           'm', 'n', 'o', 'p',
           'q', 'r', 's', 't',
           'u', 'v', 'w', 'x',
-          'y', 'z']
+          'y', 'z', 'ñ']
 
 # el 0 (cero) no lo incluyo. Puede confundirse con la letra 'o'.
 
